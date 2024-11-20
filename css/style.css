@@ -16,7 +16,7 @@
     --snd-bg-color: #262840;
     --text-color: #fff;
     --main-color: #59B2F4;
-    --bg-image: url(../image/wallpaper.jpg);
+    --bg-black: #000000;
 }
 html{
     font-size: 62.5%;
@@ -39,7 +39,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,13 +47,13 @@ section{
 }
 .logo{
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--bg-black);
     font-weight: 700;
     cursor: default;
 }
 .navbar a{
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: black;
     margin-left: 4rem;
     font-weight: 700;
 }
@@ -70,13 +70,16 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--text-color);
 }
 .home-content h3{
     font-size: 3.2rem;
     font-weight: 700;
+    color: balck;
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 2rem;
+    color: black;
 }
 span{
     color: var(--main-color);
@@ -85,6 +88,10 @@ span{
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+    color: black;
+} 
+.home-content h3{
+    color: #000000;
 }
 .home-img img{
     width: 25vw;
@@ -92,6 +99,10 @@ span{
     border-radius: 100%;
     border: 1px solid var(--main-color);
     box-shadow: 0 0 9px 10px rgba(92, 92, 236, 0.7);
+    margin: 20px;
+}
+.home-img img:hover{
+    box-shadow: none;
 }
 @keyframes floatImage{
     0%{
@@ -133,7 +144,7 @@ span{
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color: var(--text-color);
     letter-spacing: 0.1rem;
     transition: 0.5s ease;
     margin-top: 30px;
@@ -142,20 +153,26 @@ span{
     box-shadow: none;
 }
 
-/*====================== Bagian Abour Me =============================*/
+/*====================== Bagian About Me =============================*/
 
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    background: white;
 }
 .about-img img{
     width: 35vw;
     border-radius: 50%;
     border: 1px solid var(--main-color);
     box-shadow: 0 0 9px 10px rgba(92, 92, 236, 0.7);
+    margin: 20px;
+    margin-right: 15px;
+}
+
+.about-img img:hover{
+    box-shadow: none;
 }
 .heading{
     text-align: center;
@@ -164,17 +181,18 @@ span{
 .about-content h2{
     text-align: center;
     line-height: 1.2;
-}
-.about-content h3{
-    font-size: 2.5rem;
+    color: black;
 }
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    color: black;
 }
 
-/*====================== Bagian Riwayat sekolah =============================*/
-
+/*====================== Bagian Riwayat sekolah and sosial media =============================*/
+.services{
+    background: white;
+}
 .services h3{
     margin-bottom: 5rem;
 }
@@ -187,7 +205,7 @@ span{
 }
 .services-container .services-box{
     flex: 1 1 30rem;
-    background: var(--snd-bg-color);
+    background: #354678;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -213,7 +231,7 @@ span{
 /*====================== Bagian Skill =============================*/
 
 .portofolio{
-    background: var(--snd-bg-color);
+    background: white;
 }
 .portofolio h2{
     margin-bottom: 4rem;
@@ -278,41 +296,7 @@ span{
     font-size: 2rem;
     color: var(--snd-bg-color);
 }
-.contact h2{
-    font-size: 2rem;
-    color: var(--snd-bg-color);
-}
-.contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.contact form .input-box input,
-.contact form textarea{
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--snd-bg-color);
-    border-radius: 0.8rem;
-    margin: 0.7rem 0;
-}
-.contact form .input-box input{
-    width: 49%;
-}
-.contact form textarea{
-    resize: none;
-}
-.contact form .btn{
-    margin-top: 2rem;
-    cursor: pointer;
-}
+
 .footer{
     display: flex;
     justify-content: space-between;
